@@ -1,0 +1,15 @@
+C:\Users\User\source\repos\Exam_C#\Exam_C#\bin\Debug\net10.0\Exam_C#.exe
+C:\Users\User\source\repos\Exam_C#\Exam_C#\bin\Debug\net10.0\Exam_C#.deps.json
+C:\Users\User\source\repos\Exam_C#\Exam_C#\bin\Debug\net10.0\Exam_C#.runtimeconfig.json
+C:\Users\User\source\repos\Exam_C#\Exam_C#\bin\Debug\net10.0\Exam_C#.dll
+C:\Users\User\source\repos\Exam_C#\Exam_C#\bin\Debug\net10.0\Exam_C#.pdb
+C:\Users\User\source\repos\Exam_C#\Exam_C#\obj\Debug\net10.0\Exam_C#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\Exam_C#\Exam_C#\obj\Debug\net10.0\Exam_C#.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Exam_C#\Exam_C#\obj\Debug\net10.0\Exam_C#.AssemblyInfo.cs
+C:\Users\User\source\repos\Exam_C#\Exam_C#\obj\Debug\net10.0\Exam_C#.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Exam_C#\Exam_C#\obj\Debug\net10.0\Exam_C#.sourcelink.json
+C:\Users\User\source\repos\Exam_C#\Exam_C#\obj\Debug\net10.0\Exam_C#.dll
+C:\Users\User\source\repos\Exam_C#\Exam_C#\obj\Debug\net10.0\refint\Exam_C#.dll
+C:\Users\User\source\repos\Exam_C#\Exam_C#\obj\Debug\net10.0\Exam_C#.pdb
+C:\Users\User\source\repos\Exam_C#\Exam_C#\obj\Debug\net10.0\Exam_C#.genruntimeconfig.cache
+C:\Users\User\source\repos\Exam_C#\Exam_C#\obj\Debug\net10.0\ref\Exam_C#.dll
