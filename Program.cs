@@ -440,8 +440,6 @@ namespace Exam_C_
 
         public void Run()
         {
-            int index = 0;
-
             foreach (var q in Questions)
             {
                 Console.WriteLine(q.Text);
@@ -453,12 +451,10 @@ namespace Exam_C_
 
                 if (answer - 1 == q.CorrectIndex)
                 {
-                    Questions[index].Answer = "Correct";
                     Console.WriteLine("Correct!\n");
                     Score++;
                 }
                 else Console.WriteLine("Incorrect!\n");
-                index++;
             }
 
             Console.WriteLine("Number of your correct answers is: " + Score);
