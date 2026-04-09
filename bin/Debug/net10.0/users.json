@@ -1,12 +1,26 @@
 [
   {
+    "IsAdmin": false,
     "Login": "sdfg",
-    "Password": "1234324",
+    "Password": "123",
     "DateOfBirth": "2000-01-30T00:00:00"
   },
   {
+    "IsAdmin": false,
     "Login": "fsociety",
     "Password": "28343424",
     "DateOfBirth": "2008-09-23T00:00:00"
+  },
+  {
+    "IsAdmin": false,
+    "Login": "bob",
+    "Password": "333",
+    "DateOfBirth": "2020-03-21T00:00:00"
+  },
+  {
+    "IsAdmin": true,
+    "Login": "fff",
+    "Password": "4343",
+    "DateOfBirth": "1997-09-04T00:00:00"
   }
 ]

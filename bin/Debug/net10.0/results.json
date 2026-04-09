@@ -1,7 +1,44 @@
 [
   {
-    "QuizName": "History Quiz",
+    "UserLogin": "sdfg",
+    "QuizName": "Biology",
+    "Score": 2,
+    "Date": "2026-04-09T21:55:32.3280948+03:00"
+  },
+  {
+    "UserLogin": "bob",
+    "QuizName": "Technology",
+    "Score": 5,
+    "Date": "2026-04-09T21:58:27.8109117+03:00"
+  },
+  {
+    "UserLogin": "sdfg",
+    "QuizName": "History",
+    "Score": 0,
+    "Date": "2026-04-09T22:22:00.1458186+03:00"
+  },
+  {
+    "UserLogin": "sdfg",
+    "QuizName": "History",
+    "Score": 0,
+    "Date": "2026-04-09T22:24:01.4437845+03:00"
+  },
+  {
+    "UserLogin": "sdfg",
+    "QuizName": "History",
     "Score": 4,
-    "Date": "2026-04-07T20:15:06.4107152+03:00"
+    "Date": "2026-04-09T22:26:48.8062863+03:00"
+  },
+  {
+    "UserLogin": "sdfg",
+    "QuizName": "Technology",
+    "Score": 19,
+    "Date": "2026-04-09T22:34:27.4297276+03:00"
+  },
+  {
+    "UserLogin": "fff",
+    "QuizName": "History",
+    "Score": 8,
+    "Date": "2026-04-09T23:55:22.0125052+03:00"
   }
 ]

@@ -1,0 +1,1043 @@
+[
+  {
+    "Text": "Who was the first President of the United States?",
+    "Options": [
+      "George Washington",
+      "Abraham Lincoln",
+      "John Adams",
+      "Thomas Jefferson"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "History"
+  },
+  {
+    "Text": " In which year did World War II end?",
+    "Options": [
+      "1942",
+      "1945",
+      "1939",
+      "1950"
+    ],
+    "CorrectIndexes": [
+      1
+    ],
+    "Category": "History"
+  },
+  {
+    "Text": "Which empire built the Colosseum?",
+    "Options": [
+      "Greek",
+      "Roman",
+      "Ottoman",
+      "Persian"
+    ],
+    "CorrectIndexes": [
+      1
+    ],
+    "Category": "History"
+  },
+  {
+    "Text": "Who discovered America?",
+    "Options": [
+      "Christopher Columbus",
+      "Vasco da Gama",
+      "James Cook",
+      "Marco Polo"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "History"
+  },
+  {
+    "Text": "Cold War was between USA and?",
+    "Options": [
+      "Germany",
+      "China",
+      "USSR",
+      "Japan"
+    ],
+    "CorrectIndexes": [
+      2
+    ],
+    "Category": "History"
+  },
+  {
+    "Text": "The Great Fire of London happened in?",
+    "Options": [
+      "1666",
+      "1650",
+      "1700",
+      "1688"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "History"
+  },
+  {
+    "Text": "Renaissance began in which country?",
+    "Options": [
+      "France",
+      "Italy",
+      "Spain",
+      "England"
+    ],
+    "CorrectIndexes": [
+      1
+    ],
+    "Category": "History"
+  },
+  {
+    "Text": "Who wrote the Communist Manifesto?",
+    "Options": [
+      "Karl Marx",
+      "Lenin",
+      "Trotsky",
+      "Stalin"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "History"
+  },
+  {
+    "Text": "Which two countries were part of the Triple Alliance in WWI?",
+    "Options": [
+      "Germany",
+      "France",
+      "Italy",
+      "Russia"
+    ],
+    "CorrectIndexes": [
+      0,
+      2
+    ],
+    "Category": "History"
+  },
+  {
+    "Text": "Which event started World War I?",
+    "Options": [
+      "Assassination of Franz Ferdinand",
+      "Fall of Berlin Wall",
+      "Battle of Hastings",
+      "French Revolution"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "History"
+  },
+  {
+    "Text": "Who was the first emperor of Rome?",
+    "Options": [
+      "Augustus",
+      "Julius Caesar",
+      "Nero",
+      "Caligula"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "History"
+  },
+  {
+    "Text": "French Revolution started in?",
+    "Options": [
+      "1789",
+      "1776",
+      "1804",
+      "1799"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "History"
+  },
+  {
+    "Text": "Who was known as the Maid of Orleans?",
+    "Options": [
+      "Joan of Arc",
+      "Marie Antoinette",
+      "Catherine the Great",
+      "Elizabeth I"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "History"
+  },
+  {
+    "Text": "American Civil War took place in?",
+    "Options": [
+      "1861-1865",
+      "1775-1783",
+      "1812-1815",
+      "1914-1918"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "History"
+  },
+  {
+    "Text": "Which two nations fought the Hundred Years\u0027 War?",
+    "Options": [
+      "France",
+      "England",
+      "Spain",
+      "Portugal"
+    ],
+    "CorrectIndexes": [
+      0,
+      1
+    ],
+    "Category": "History"
+  },
+  {
+    "Text": "Who led the Soviet Union during WWII?",
+    "Options": [
+      "Lenin",
+      "Stalin",
+      "Trotsky",
+      "Gorbachev"
+    ],
+    "CorrectIndexes": [
+      1
+    ],
+    "Category": "History"
+  },
+  {
+    "Text": "Fall of the Berlin Wall happened in?",
+    "Options": [
+      "1989",
+      "1991",
+      "1980",
+      "1975"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "History"
+  },
+  {
+    "Text": "Which war was fought between North and South Korea?",
+    "Options": [
+      "Korean War",
+      "Vietnam War",
+      "World War II",
+      "Gulf War"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "History"
+  },
+  {
+    "Text": "Who was the British Prime Minister during WWII?",
+    "Options": [
+      "Winston Churchill",
+      "Neville Chamberlain",
+      "Tony Blair",
+      "Margaret Thatcher"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "History"
+  },
+  {
+    "Text": "Which empire fell in 476 AD?",
+    "Options": [
+      "Roman Empire",
+      "Byzantine Empire",
+      "Ottoman Empire",
+      "Mongol Empire"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "History"
+  },
+  {
+    "Text": "Capital of France?",
+    "Options": [
+      "Berlin",
+      "Madrid",
+      "Paris",
+      "Rome"
+    ],
+    "CorrectIndexes": [
+      2
+    ],
+    "Category": "Geography"
+  },
+  {
+    "Text": "Largest ocean?",
+    "Options": [
+      "Atlantic",
+      "Indian",
+      "Pacific",
+      "Arctic"
+    ],
+    "CorrectIndexes": [
+      2
+    ],
+    "Category": "Geography"
+  },
+  {
+    "Text": "Largest population country?",
+    "Options": [
+      "USA",
+      "India",
+      "China",
+      "Brazil"
+    ],
+    "CorrectIndexes": [
+      2
+    ],
+    "Category": "Geography"
+  },
+  {
+    "Text": "Mount Everest range?",
+    "Options": [
+      "Alps",
+      "Andes",
+      "Himalayas",
+      "Rockies"
+    ],
+    "CorrectIndexes": [
+      2
+    ],
+    "Category": "Geography"
+  },
+  {
+    "Text": "Longest river?",
+    "Options": [
+      "Amazon",
+      "Nile",
+      "Yangtze",
+      "Mississippi"
+    ],
+    "CorrectIndexes": [
+      1
+    ],
+    "Category": "Geography"
+  },
+  {
+    "Text": "Which desert is the largest?",
+    "Options": [
+      "Sahara",
+      "Gobi",
+      "Kalahari",
+      "Arabian"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Geography"
+  },
+  {
+    "Text": "Which two countries share the longest border?",
+    "Options": [
+      "USA",
+      "Canada",
+      "Russia",
+      "China"
+    ],
+    "CorrectIndexes": [
+      0,
+      1
+    ],
+    "Category": "Geography"
+  },
+  {
+    "Text": "Capital of Japan?",
+    "Options": [
+      "Tokyo",
+      "Kyoto",
+      "Osaka",
+      "Hiroshima"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Geography"
+  },
+  {
+    "Text": "Which continent is largest by area?",
+    "Options": [
+      "Africa",
+      "Asia",
+      "Europe",
+      "South America"
+    ],
+    "CorrectIndexes": [
+      1
+    ],
+    "Category": "Geography"
+  },
+  {
+    "Text": "Which two countries are in Scandinavia?",
+    "Options": [
+      "Norway",
+      "Sweden",
+      "Poland",
+      "Finland"
+    ],
+    "CorrectIndexes": [
+      0,
+      1
+    ],
+    "Category": "Geography"
+  },
+  {
+    "Text": "Which is the smallest country in the world?",
+    "Options": [
+      "Vatican City",
+      "Monaco",
+      "Nauru",
+      "San Marino"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Geography"
+  },
+  {
+    "Text": "Which sea is between Europe and Africa?",
+    "Options": [
+      "Black Sea",
+      "Mediterranean Sea",
+      "Red Sea",
+      "Caspian Sea"
+    ],
+    "CorrectIndexes": [
+      1
+    ],
+    "Category": "Geography"
+  },
+  {
+    "Text": "Which river flows through Egypt?",
+    "Options": [
+      "Nile",
+      "Amazon",
+      "Yangtze",
+      "Mississippi"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Geography"
+  },
+  {
+    "Text": "Which mountain is highest in Africa?",
+    "Options": [
+      "Kilimanjaro",
+      "Atlas",
+      "Elgon",
+      "Ruwenzori"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Geography"
+  },
+  {
+    "Text": "Capital of Australia?",
+    "Options": [
+      "Sydney",
+      "Melbourne",
+      "Canberra",
+      "Perth"
+    ],
+    "CorrectIndexes": [
+      2
+    ],
+    "Category": "Geography"
+  },
+  {
+    "Text": "Which two countries are in South America?",
+    "Options": [
+      "Brazil",
+      "Argentina",
+      "Spain",
+      "Mexico"
+    ],
+    "CorrectIndexes": [
+      0,
+      1
+    ],
+    "Category": "Geography"
+  },
+  {
+    "Text": "Which country has the most time zones?",
+    "Options": [
+      "USA",
+      "Russia",
+      "France",
+      "China"
+    ],
+    "CorrectIndexes": [
+      1
+    ],
+    "Category": "Geography"
+  },
+  {
+    "Text": "Which ocean is shrinking?",
+    "Options": [
+      "Pacific",
+      "Atlantic",
+      "Indian",
+      "Arctic"
+    ],
+    "CorrectIndexes": [
+      1
+    ],
+    "Category": "Geography"
+  },
+  {
+    "Text": "Which desert is in China?",
+    "Options": [
+      "Gobi",
+      "Sahara",
+      "Kalahari",
+      "Mojave"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Geography"
+  },
+  {
+    "Text": "Which city is in Italy?",
+    "Options": [
+      "Rome",
+      "Madrid",
+      "Athens",
+      "Lisbon"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Geography"
+  },
+  {
+    "Text": "Basic unit of life?",
+    "Options": [
+      "Atom",
+      "Cell",
+      "Organ",
+      "Tissue"
+    ],
+    "CorrectIndexes": [
+      1
+    ],
+    "Category": "Biology"
+  },
+  {
+    "Text": "Which organ pumps blood?",
+    "Options": [
+      "Liver",
+      "Brain",
+      "Heart",
+      "Lungs"
+    ],
+    "CorrectIndexes": [
+      2
+    ],
+    "Category": "Biology"
+  },
+  {
+    "Text": "Plants absorb?",
+    "Options": [
+      "Oxygen",
+      "Carbon dioxide",
+      "Nitrogen",
+      "Hydrogen"
+    ],
+    "CorrectIndexes": [
+      1
+    ],
+    "Category": "Biology"
+  },
+  {
+    "Text": "DNA stands for?",
+    "Options": [
+      "Deoxyribonucleic Acid",
+      "Dynamic Network Analysis",
+      "Digital Numeric Array",
+      "None"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Biology"
+  },
+  {
+    "Text": "Genetic material location?",
+    "Options": [
+      "Nucleus",
+      "Membrane",
+      "Cytoplasm",
+      "Ribosome"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Biology"
+  },
+  {
+    "Text": "Which two are types of nucleic acids?",
+    "Options": [
+      "DNA",
+      "RNA",
+      "ATP",
+      "Glucose"
+    ],
+    "CorrectIndexes": [
+      0,
+      1
+    ],
+    "Category": "Biology"
+  },
+  {
+    "Text": "Which two are mammal characteristics?",
+    "Options": [
+      "Hair",
+      "Lungs",
+      "Egg-laying",
+      "Warm-blooded"
+    ],
+    "CorrectIndexes": [
+      0,
+      3
+    ],
+    "Category": "Biology"
+  },
+  {
+    "Text": "Which gas do animals exhale?",
+    "Options": [
+      "Oxygen",
+      "Carbon dioxide",
+      "Nitrogen",
+      "Helium"
+    ],
+    "CorrectIndexes": [
+      1
+    ],
+    "Category": "Biology"
+  },
+  {
+    "Text": "Which organ is part of the digestive system?",
+    "Options": [
+      "Stomach",
+      "Heart",
+      "Lungs",
+      "Kidney"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Biology"
+  },
+  {
+    "Text": "Which part of the cell contains DNA?",
+    "Options": [
+      "Nucleus",
+      "Ribosome",
+      "Mitochondria",
+      "Cytoplasm"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Biology"
+  },
+  {
+    "Text": "Photosynthesis produces?",
+    "Options": [
+      "Glucose",
+      "Oxygen",
+      "Carbon dioxide",
+      "Water"
+    ],
+    "CorrectIndexes": [
+      0,
+      1
+    ],
+    "Category": "Biology"
+  },
+  {
+    "Text": "Which organ filters blood?",
+    "Options": [
+      "Kidney",
+      "Liver",
+      "Lung",
+      "Heart"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Biology"
+  },
+  {
+    "Text": "Which system controls the body?",
+    "Options": [
+      "Nervous",
+      "Circulatory",
+      "Digestive",
+      "Skeletal"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Biology"
+  },
+  {
+    "Text": "Which is a prokaryotic organism?",
+    "Options": [
+      "Bacteria",
+      "Fungi",
+      "Plant",
+      "Animal"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Biology"
+  },
+  {
+    "Text": "Which two are macronutrients?",
+    "Options": [
+      "Protein",
+      "Carbohydrate",
+      "Vitamin C",
+      "Iron"
+    ],
+    "CorrectIndexes": [
+      0,
+      1
+    ],
+    "Category": "Biology"
+  },
+  {
+    "Text": "Which vitamin is produced by sunlight?",
+    "Options": [
+      "Vitamin D",
+      "Vitamin C",
+      "Vitamin B12",
+      "Vitamin A"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Biology"
+  },
+  {
+    "Text": "Which cells carry oxygen?",
+    "Options": [
+      "Red blood cells",
+      "White blood cells",
+      "Platelets",
+      "Neurons"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Biology"
+  },
+  {
+    "Text": "Which two are types of blood cells?",
+    "Options": [
+      "Red",
+      "White",
+      "Lymph",
+      "Neuron"
+    ],
+    "CorrectIndexes": [
+      0,
+      1
+    ],
+    "Category": "Biology"
+  },
+  {
+    "Text": "Which is the largest organ in human body?",
+    "Options": [
+      "Skin",
+      "Heart",
+      "Liver",
+      "Lung"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Biology"
+  },
+  {
+    "Text": "Which is essential for vision?",
+    "Options": [
+      "Vitamin A",
+      "Vitamin D",
+      "Vitamin K",
+      "Vitamin C"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Biology"
+  },
+  {
+    "Text": "CPU stands for?",
+    "Options": [
+      "Central Processing Unit",
+      "Computer Personal Unit",
+      "Central Power Unit",
+      "Control Processing Unit"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Technology"
+  },
+  {
+    "Text": ".NET language?",
+    "Options": [
+      "Python",
+      "C#",
+      "JavaScript",
+      "C\u002B\u002B"
+    ],
+    "CorrectIndexes": [
+      1
+    ],
+    "Category": "Technology"
+  },
+  {
+    "Text": "HTML stands for?",
+    "Options": [
+      "HyperText Markup Language",
+      "HighText Machine",
+      "Hyper Transfer Mark",
+      "Home Tool"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Technology"
+  },
+  {
+    "Text": "Windows developer?",
+    "Options": [
+      "Apple",
+      "Google",
+      "Microsoft",
+      "IBM"
+    ],
+    "CorrectIndexes": [
+      2
+    ],
+    "Category": "Technology"
+  },
+  {
+    "Text": "Brain of computer?",
+    "Options": [
+      "RAM",
+      "Hard Drive",
+      "CPU",
+      "GPU"
+    ],
+    "CorrectIndexes": [
+      2
+    ],
+    "Category": "Technology"
+  },
+  {
+    "Text": "Which two are programming paradigms?",
+    "Options": [
+      "OOP",
+      "Functional",
+      "CSS",
+      "HTML"
+    ],
+    "CorrectIndexes": [
+      0,
+      1
+    ],
+    "Category": "Technology"
+  },
+  {
+    "Text": "Which two are operating systems?",
+    "Options": [
+      "Windows",
+      "Linux",
+      "Python",
+      "C#"
+    ],
+    "CorrectIndexes": [
+      0,
+      1
+    ],
+    "Category": "Technology"
+  },
+  {
+    "Text": "Which language is for web styling?",
+    "Options": [
+      "CSS",
+      "C\u002B\u002B",
+      "Java",
+      "Python"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Technology"
+  },
+  {
+    "Text": "Which device stores data permanently?",
+    "Options": [
+      "SSD",
+      "RAM",
+      "CPU",
+      "GPU"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Technology"
+  },
+  {
+    "Text": "Which is a cloud platform?",
+    "Options": [
+      "AWS",
+      "Excel",
+      "Photoshop",
+      "GitHub"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Technology"
+  },
+  {
+    "Text": "Which is a markup language?",
+    "Options": [
+      "HTML",
+      "Python",
+      "C#",
+      "Java"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Technology"
+  },
+  {
+    "Text": "Which is a scripting language?",
+    "Options": [
+      "JavaScript",
+      "C\u002B\u002B",
+      "Java",
+      "C#"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Technology"
+  },
+  {
+    "Text": "Which two are types of computer memory?",
+    "Options": [
+      "RAM",
+      "ROM",
+      "CPU",
+      "GPU"
+    ],
+    "CorrectIndexes": [
+      0,
+      1
+    ],
+    "Category": "Technology"
+  },
+  {
+    "Text": "Which network is global?",
+    "Options": [
+      "Internet",
+      "LAN",
+      "PAN",
+      "MAN"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Technology"
+  },
+  {
+    "Text": "Which is a database system?",
+    "Options": [
+      "MySQL",
+      "Python",
+      "C\u002B\u002B",
+      "HTML"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Technology"
+  },
+  {
+    "Text": "Which is for version control?",
+    "Options": [
+      "Git",
+      "Linux",
+      "Python",
+      "C#"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Technology"
+  },
+  {
+    "Text": "Which two are cloud storage services?",
+    "Options": [
+      "Google Drive",
+      "Dropbox",
+      "GitHub",
+      "Linux"
+    ],
+    "CorrectIndexes": [
+      0,
+      1
+    ],
+    "Category": "Technology"
+  },
+  {
+    "Text": "Which device processes graphics?",
+    "Options": [
+      "GPU",
+      "CPU",
+      "RAM",
+      "SSD"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Technology"
+  },
+  {
+    "Text": "Which is a search engine?",
+    "Options": [
+      "Google",
+      "GitHub",
+      "Windows",
+      "Python"
+    ],
+    "CorrectIndexes": [
+      0
+    ],
+    "Category": "Technology"
+  }
+]
