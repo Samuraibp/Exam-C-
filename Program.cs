@@ -282,9 +282,21 @@ namespace Exam_C_
                         }
                         break;
                     }
+                    string pass;
 
-                    Console.Write("Password: ");
-                    string pass = Console.ReadLine() ?? "";
+                    while(true)
+                    { 
+                        Console.Write("Password: ");
+                        pass = Console.ReadLine() ?? "";
+
+                        if (string.IsNullOrWhiteSpace(pass))
+                        {
+                            Console.WriteLine("Password cannot be empty!");
+                            continue;
+                        }
+                        break;
+                    }
+                    
 
                     DateTime date;
 
@@ -549,8 +561,10 @@ namespace Exam_C_
                             .Split(',')
                             .Select(x =>
                             {
-                                int.TryParse(x.Trim(), out int v);
-                                return v - 1;
+                                if (int.TryParse(x.Trim(), out int v))
+                                    return v - 1;
+
+                                return -1;
                             })
                             .Where(x => x >= 0 && x < q.Options.Count)
                             .ToList();

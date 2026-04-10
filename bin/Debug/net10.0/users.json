@@ -20,7 +20,19 @@
   {
     "IsAdmin": true,
     "Login": "fff",
-    "Password": "4343",
+    "Password": "234",
     "DateOfBirth": "1997-09-04T00:00:00"
+  },
+  {
+    "IsAdmin": false,
+    "Login": "jeck",
+    "Password": "5544",
+    "DateOfBirth": "2012-11-12T00:00:00"
+  },
+  {
+    "IsAdmin": false,
+    "Login": "skdfjh",
+    "Password": "3333",
+    "DateOfBirth": "2000-12-30T00:00:00"
   }
 ]
