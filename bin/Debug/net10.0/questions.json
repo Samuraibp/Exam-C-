@@ -1026,18 +1026,5 @@
       0
     ],
     "Category": "Technology"
-  },
-  {
-    "Text": "Which is a search engine?",
-    "Options": [
-      "Google",
-      "GitHub",
-      "Windows",
-      "Python"
-    ],
-    "CorrectIndexes": [
-      0
-    ],
-    "Category": "Technology"
   }
 ]

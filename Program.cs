@@ -3,46 +3,67 @@ namespace Exam_C_
 {
     internal class Program
     {
-        static public void OpenEditor(List<Question> questions, string path, JsonSerializerOptions? options)
+        static public void OpenEditor(List<Question> questions)
         {
             QuizEditor editor = new QuizEditor(questions);
             editor.Run();
-            using FileStream fs = new FileStream(path, FileMode.Create);
-            JsonSerializer.Serialize(fs, questions, options);
         }
+
 
         static Random rnd = new Random();
 
         static void Main(string[] args)
         {
-            List<User> users = new List<User>();
-            User currentUser = null;
-            List<QuizResult> Results = new List<QuizResult>();
-
             string user_path = "users.json";
             string results_path = "results.json";
             string questions_path = "questions.json";
 
             var options = new JsonSerializerOptions { WriteIndented = true };
 
-            if (File.Exists(user_path))
+            List<User> users = new List<User>();
+            User currentUser = null;
+
+            try
             {
                 using FileStream fs = new FileStream(user_path, FileMode.Open);
-                users = JsonSerializer.Deserialize<List<User>>(fs) ?? new List<User>();
+
+                users = JsonSerializer.Deserialize<List<User>>(fs)
+                        ?? new List<User>();
+            }
+            catch
+            {
+                users = new List<User>();
             }
 
-            if (File.Exists(results_path))
+            List<QuizResult> Results = new List<QuizResult>();
+
+            try
             {
                 using FileStream fs = new FileStream(results_path, FileMode.Open);
-                Results = JsonSerializer.Deserialize<List<QuizResult>>(fs) ?? new List<QuizResult>();
+
+                Results = JsonSerializer.Deserialize<List<QuizResult>>(fs)
+                          ?? new List<QuizResult>();
+            }
+            catch
+            {
+                Results = new List<QuizResult>();
             }
 
             List<Question> allQuestions = new List<Question>();
 
             if (File.Exists(questions_path))
             {
-                using FileStream fs = new FileStream(questions_path, FileMode.Open);
-                allQuestions = JsonSerializer.Deserialize<List<Question>>(fs) ?? new List<Question>();
+                try
+                {
+                    using FileStream fs = new FileStream(questions_path, FileMode.Open);
+
+                    allQuestions = JsonSerializer.Deserialize<List<Question>>(fs)
+                                   ?? new List<Question>();
+                }
+                catch
+                {
+                    allQuestions = new List<Question>();
+                }
             }
             else
             {
@@ -214,6 +235,9 @@ namespace Exam_C_
                     new Question("Which is a search engine?",
                         new List<string>{"Google","GitHub","Windows","Python"}, new List<int>{0},"Technology")
                 };
+
+                using FileStream fs = new FileStream(questions_path, FileMode.Create);
+                JsonSerializer.Serialize(fs, allQuestions, options);
             }
             
 
@@ -224,7 +248,12 @@ namespace Exam_C_
             Console.WriteLine("2 - Login");
             Console.WriteLine("0 - Exit");
 
-            if (!int.TryParse(Console.ReadLine(), out int option)) return;
+            int option;
+
+            while (!int.TryParse(Console.ReadLine(), out option) || option < 0 || option > 2)
+            {
+                Console.WriteLine("Invalid choice! Enter number from 0 to 2:");
+            }
 
             switch (option)
             {
@@ -238,7 +267,7 @@ namespace Exam_C_
                     while (true)
                     {
                         Console.Write("Enter login: ");
-                        login = Console.ReadLine();
+                        login = Console.ReadLine() ?? "";
 
                         if (string.IsNullOrWhiteSpace(login))
                         {
@@ -255,7 +284,7 @@ namespace Exam_C_
                     }
 
                     Console.Write("Password: ");
-                    string pass = Console.ReadLine();
+                    string pass = Console.ReadLine() ?? "";
 
                     DateTime date;
 
@@ -266,7 +295,7 @@ namespace Exam_C_
                         Console.WriteLine("Invalid date!");
                     }
                     Console.Write("Are you admin? (y/n): ");
-                    string adminInput = Console.ReadLine();
+                    string adminInput = Console.ReadLine() ?? "";
                     bool isAdmin = adminInput != null && adminInput.Trim().ToLower() == "y";
 
                     currentUser = new User(login, pass, date, isAdmin);
@@ -282,10 +311,10 @@ namespace Exam_C_
                 case 2:
 
                     Console.Write("Login: ");
-                    string log = Console.ReadLine();
+                    string log = Console.ReadLine() ?? "";
 
                     Console.Write("Password: ");
-                    string password = Console.ReadLine();
+                    string password = Console.ReadLine() ?? "";
 
                     var user = users.FirstOrDefault(u => u.Login == log && u.Password == password);
 
@@ -312,15 +341,25 @@ namespace Exam_C_
                 Console.WriteLine("5 - Quiz Editor (Admin)");
                 Console.WriteLine("0 - Exit");
 
-                int choice = int.Parse(Console.ReadLine());
-                
+                int choice;
+
+                while (!int.TryParse(Console.ReadLine(), out choice) || choice < 0 || choice > 5)
+                {
+                    Console.WriteLine("Invalid choice! Enter number from 0 to 5:");
+                }
+
                 if (choice == 0) return;
 
                 if (choice == 1)
                 {
                     Console.WriteLine("1 History\n2 Geography\n3 Biology\n4 Technology\n5 Mixed");
 
-                    int sub = int.Parse(Console.ReadLine());
+                    int sub;
+
+                    while (!int.TryParse(Console.ReadLine(), out sub) || sub < 1 || sub > 5)
+                    {
+                        Console.WriteLine("Invalid choice! Enter number from 1 to 5:");
+                    }
 
                     Quiz quiz = null;
 
@@ -385,7 +424,7 @@ namespace Exam_C_
                 if (choice == 3)
                 {
                     Console.Write("Quiz name: ");
-                    string name = Console.ReadLine();
+                    string name = Console.ReadLine() ?? "";
 
                     var top = Results
                         .Where(r => r.QuizName.ToUpper() == name.ToUpper())
@@ -411,12 +450,12 @@ namespace Exam_C_
                 {
                     Console.WriteLine("1 Change password\n2 Change birth date");
 
-                    int set = int.Parse(Console.ReadLine());
+                    int set = int.Parse(Console.ReadLine() ?? "");
 
                     if (set == 1)
                     {
                         Console.Write("New password: ");
-                        currentUser.Password = Console.ReadLine();
+                        currentUser.Password = Console.ReadLine() ?? "";
                     }
 
                     if (set == 2)
@@ -440,7 +479,7 @@ namespace Exam_C_
                         continue;
                     }
 
-                    OpenEditor(allQuestions, questions_path, options);
+                    OpenEditor(allQuestions);
                 }
             }
         }
@@ -505,12 +544,16 @@ namespace Exam_C_
                     Console.WriteLine($"{i + 1} - {q.Options[i]}");
 
                 Console.WriteLine("Enter all correct answers separated by commas (e.g. 1,3):");
-                string input = Console.ReadLine();
-                var selected = input.Split(',').Select(x =>
-                {
-                    int.TryParse(x.Trim(), out int v);
-                    return v - 1;
-                }).ToList();
+                string input = Console.ReadLine() ?? "";
+                var selected = input
+                            .Split(',')
+                            .Select(x =>
+                            {
+                                int.TryParse(x.Trim(), out int v);
+                                return v - 1;
+                            })
+                            .Where(x => x >= 0 && x < q.Options.Count)
+                            .ToList();
 
                 var correct = q.CorrectIndexes.OrderBy(x => x);
                 var selectedSorted = selected.OrderBy(x => x);
@@ -557,6 +600,10 @@ namespace Exam_C_
     {
         private List<Question> questions;
 
+        public string questions_path = "questions.json";
+
+        public JsonSerializerOptions? op = new JsonSerializerOptions { WriteIndented = true };
+
         public QuizEditor(List<Question> questions)
         {
             this.questions = questions;
@@ -573,7 +620,12 @@ namespace Exam_C_
                 Console.WriteLine("4 - Show all questions");
                 Console.WriteLine("0 - Exit");
 
-                int choice = int.Parse(Console.ReadLine());
+                int choice;
+
+                while (!int.TryParse(Console.ReadLine(), out choice) || choice < 0 || choice > 4)
+                {
+                    Console.WriteLine("Invalid choice!");
+                }
 
                 switch (choice)
                 {
@@ -602,25 +654,33 @@ namespace Exam_C_
         private void AddQuestion()
         {
             Console.Write("Text: ");
-            string text = Console.ReadLine();
+            string text = Console.ReadLine() ?? "";
 
             Console.Write("Category: ");
-            string cat = Console.ReadLine();
+            string cat = Console.ReadLine() ?? "";
 
             List<string> options = new List<string>();
             for (int i = 0; i < 4; i++)
             {
                 Console.Write($"Option {i + 1}: ");
-                options.Add(Console.ReadLine());
+                options.Add(Console.ReadLine() ?? "");
             }
 
             Console.Write("Correct indexes (e.g. 1,3): ");
-            var correct = Console.ReadLine()
-                .Split(',')
-                .Select(x => int.Parse(x.Trim()) - 1)
-                .ToList();
+            var correct = (Console.ReadLine() ?? "")
+                        .Split(',')
+                        .Select(x =>
+                        {
+                            int.TryParse(x.Trim(), out int v);
+                            return v - 1;
+                        })
+                        .Where(x => x >= 0 && x < options.Count)
+                        .ToList();
 
             questions.Add(new Question(text, options, correct, cat));
+
+            using FileStream fs = new FileStream(questions_path, FileMode.Create);
+            JsonSerializer.Serialize(fs, questions, op);
 
             Console.WriteLine("Added!");
         }
@@ -630,14 +690,55 @@ namespace Exam_C_
             ShowAll();
 
             Console.Write("Index: ");
-            int i = int.Parse(Console.ReadLine());
+            int i;
 
-            if (i < 0 || i >= questions.Count) return;
+            while (!int.TryParse(Console.ReadLine(), out i) || i < 1 || i > questions.Count + 1)
+            {
+                Console.WriteLine($"Invalid choice! Enter number from 1 to {questions.Count}:");
+            }
 
-            Console.Write("New text: ");
-            questions[i].Text = Console.ReadLine();
+            var q = questions[i - 1];
 
-            Console.WriteLine("Updated!");
+            Console.WriteLine("\nIf you don't want to change something, just press ENTER.");
+
+            Console.Write($"Text ({q.Text}): ");
+            string newText = Console.ReadLine() ?? "";
+            if (!string.IsNullOrWhiteSpace(newText))
+                q.Text = newText;
+
+            Console.Write($"Category ({q.Category}) [Press ENTER to keep current]: ");
+            string newCat = Console.ReadLine() ?? "";
+            if (!string.IsNullOrWhiteSpace(newCat))
+                q.Category = newCat;
+
+            Console.WriteLine("\nEdit options (Press ENTER to keep current option)");
+
+            for (int j = 0; j < q.Options.Count; j++)
+            {
+                Console.Write($"Option {j + 1} ({q.Options[j]}): ");
+                string opt = Console.ReadLine() ?? "";
+
+                if (!string.IsNullOrWhiteSpace(opt))
+                    q.Options[j] = opt;
+            }
+
+            Console.Write($"Correct answers ({string.Join(",", q.CorrectIndexes.Select(x => x + 1))}) ");
+            Console.Write("[Example: 1,3 | Press ENTER to keep current]: ");
+
+            string correctInput = Console.ReadLine() ?? "";
+
+            if (!string.IsNullOrWhiteSpace(correctInput))
+            {
+                q.CorrectIndexes = correctInput
+                    .Split(',')
+                    .Select(x => int.Parse(x.Trim()) - 1)
+                    .ToList();
+            }
+
+            using FileStream fs = new FileStream(questions_path, FileMode.Create);
+            JsonSerializer.Serialize(fs, questions, op);
+
+            Console.WriteLine("Question updated successfully!");
         }
 
         private void DeleteQuestion()
@@ -645,11 +746,17 @@ namespace Exam_C_
             ShowAll();
 
             Console.Write("Index: ");
-            int i = int.Parse(Console.ReadLine());
+            int i;
 
-            if (i < 0 || i >= questions.Count) return;
+            while (!int.TryParse(Console.ReadLine(), out i) || i < 1 || i >= questions.Count + 1)
+            {
+                Console.WriteLine($"Invalid choice! Enter number from 1 to {questions.Count}:");
+            }
 
-            questions.RemoveAt(i);
+            questions.RemoveAt(i - 1);
+
+            using FileStream fs = new FileStream(questions_path, FileMode.Create);
+            JsonSerializer.Serialize(fs, questions, op);
 
             Console.WriteLine("Deleted!");
         }
@@ -658,7 +765,7 @@ namespace Exam_C_
         {
             for (int i = 0; i < questions.Count; i++)
             {
-                Console.WriteLine($"{i}. {questions[i].Text} ({questions[i].Category})");
+                Console.WriteLine($"{i + 1}. {questions[i].Text} ({questions[i].Category})");
             }
         }
     }
